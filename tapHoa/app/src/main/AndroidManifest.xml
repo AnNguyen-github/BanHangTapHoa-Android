@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quanao.hanghieu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TapHoaOnline">
+        <activity
+            android:name=".ui.StatisticalDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ThongKeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManagerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.Capture"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.LoginFingerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StatisticalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BarcodeScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
